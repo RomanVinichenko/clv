@@ -1,0 +1,123 @@
+.promoted {
+  padding: 72px;
+
+  h4 {
+    margin-bottom: 32px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    li {
+      width: 100%;
+      max-width: 46%;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+
+      a {
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding-left: 24px;
+        height: 48px;
+        border-radius: 8px;
+        font-size: 16px;
+        line-height: 19px;
+        color: #303030;
+        transition: all 0.3s;
+
+        &::after {
+          content: url("../images/link.svg");
+          position: absolute;
+          left: 2px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+
+        &:hover {
+          background-color: #edf3ff;
+        }
+      }
+    }
+  }
+}
+
+.parts {
+  position: relative;
+  display: grid;
+  grid-gap: 0 47px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: -37px auto 0;
+  padding: 16px;
+  border: 1px solid #f6f9fc;
+  border-radius: 14px;
+  box-shadow: 0 17px 14px -10px rgba(0, 0, 0, 0.05);
+  background: #fff;
+
+  input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  li {
+    position: relative;
+    width: 100%;
+    border-radius: 14px;
+    text-align: center;
+
+    label {
+      display: block;
+      padding: 8px 0 16px;
+      border-radius: 14px;
+      transition: all 0.3s;
+
+      &:hover {
+        background-color: #edf3ff;
+        cursor: pointer;
+      }
+    }
+
+    img {
+      margin: 0 auto 16px;
+    }
+
+    span {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+      text-align: center;
+      color: #000;
+    }
+
+    a {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 18px;
+      text-align: center;
+      color: #97a4ba;
+    }
+
+    &:not(:last-of-type) {
+      &::after {
+        content: "";
+        position: absolute;
+        right: -24px;
+        top: 50%;
+        z-index: 0;
+        width: 1px;
+        height: 143px;
+        background-color: rgba(0, 0, 0, 0.05);
+        transform: translateY(-50%);
+      }
+    }
+  }
+}

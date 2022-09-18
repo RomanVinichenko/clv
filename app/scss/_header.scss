@@ -1,0 +1,93 @@
+.header-help {
+  z-index: 30;
+  background-color: #000;
+
+  .menu {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    padding: 16px 0;
+
+    &__items {
+      display: flex;
+      align-items: center;
+
+      .menu__button,
+      .menu__link {
+        font-size: 16px;
+        line-height: 19px;
+        color: #fff;
+      }
+
+      .menu__link {
+        display: flex;
+        align-items: center;
+        margin-right: 40px;
+      }
+
+      .menu__button {
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding: 0 26px 0 0;
+        height: 24px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+
+        &::after {
+          content: url("../images/lang-arrow.svg");
+          position: absolute;
+          right: 0;
+          top: 0;
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+
+    &__lang {
+      position: relative;
+    }
+
+    &__drop {
+      position: absolute;
+      right: 0;
+      top: 36px;
+      z-index: 20;
+      visibility: hidden;
+      opacity: 0;
+      padding: 14px 16px;
+      width: 127px;
+      border: 1px solid #000;
+      border-radius: 16px;
+      background-color: #fff;
+      transition: all 0.3s;
+
+      li {
+        &:not(:last-child) {
+          margin-bottom: 8px;
+          padding-bottom: 8px;
+          border-bottom: 1px solid #c4c4c4;
+        }
+      }
+
+      a {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+        text-align: center;
+        transition: all 0.3s;
+
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+
+    &__drop--active {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}
