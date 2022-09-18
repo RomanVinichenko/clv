@@ -1,0 +1,38 @@
+.wallet {
+  margin: -37px auto 72px;
+  padding: 40px 48px;
+  border: 1px solid #f6f9fc;
+  border-radius: 14px;
+  box-shadow: 0 17px 14px -10px rgba(0, 0, 0, 0.05);
+  background-color: #fff;
+
+  h2 {
+    margin-bottom: 24px;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 40px;
+    color: #171717;
+  }
+
+  p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #303030;
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16px 0;
+    min-height: 538px;
+    background-color: #2c2d30;
+  }
+
+  a {
+    display: inline;
+    color: #00e1d4;
+  }
+}
