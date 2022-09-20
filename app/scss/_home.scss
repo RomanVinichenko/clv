@@ -76,43 +76,26 @@
   box-shadow: 0 17px 14px -10px rgba(0, 0, 0, 0.05);
   background-color: #fff;
 
-  input {
-    position: absolute;
-    left: 0;
-    top: 0;
-    visibility: hidden;
-    opacity: 0;
-  }
-
   li {
     position: relative;
+    padding: 12px 8px;
     width: 100%;
     border-radius: 14px;
     text-align: center;
-
-    label {
-      display: block;
-      padding: 8px 0 16px;
-      border-radius: 14px;
-      transition: all 0.3s;
-
-      @include m($lg) {
-        padding: 8px 6px 16px;
-      }
-
-      @include m($md) {
-        padding: 24px 6px;
-        border-radius: 0;
-      }
-    }
+    background-color: #fff;
+    transition: all 0.3s;
 
     img {
       margin: 0 auto 16px;
     }
 
-    span {
+    .help-center-radio-label {
       display: block;
       margin-bottom: 8px;
+    }
+
+    span {
+      display: block;
       font-weight: 700;
       font-size: 20px;
       line-height: 24px;
@@ -126,11 +109,17 @@
     }
 
     a {
-      font-weight: 500;
-      font-size: 12px;
-      line-height: 18px;
-      text-align: center;
-      color: #97a4ba;
+      &:last-of-type {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        text-align: center;
+        color: #97a4ba;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
     }
 
     &:not(:last-of-type) {
@@ -161,19 +150,19 @@
     }
 
     &:first-of-type {
-      label {
-        @include m($md) {
-          border-radius: 14px 14px 0 0;
-        }
+      @include m($md) {
+        border-radius: 14px 14px 0 0;
       }
     }
 
     &:last-of-type {
-      label {
-        @include m($md) {
-          border-radius: 0 0 14px 14px;
-        }
+      @include m($md) {
+        border-radius: 0 0 14px 14px;
       }
+    }
+
+    &:hover {
+      background: #edf3ff;
     }
   }
 
