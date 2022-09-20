@@ -78,38 +78,36 @@
 
   li {
     position: relative;
-    padding: 12px 8px;
-    width: 100%;
-    border-radius: 14px;
-    text-align: center;
-    background-color: #fff;
-    transition: all 0.3s;
-
-    img {
-      margin: 0 auto 16px;
-    }
-
-    .help-center-radio-label {
-      display: block;
-      margin-bottom: 8px;
-    }
-
-    span {
-      display: block;
-      font-weight: 700;
-      font-size: 20px;
-      line-height: 24px;
-      text-align: center;
-      color: #000;
-
-      @include m($lg) {
-        font-size: 18px;
-        line-height: 22px;
-      }
-    }
 
     a {
-      &:last-of-type {
+      display: block;
+      padding: 12px 8px;
+      width: 100%;
+      border-radius: 14px;
+      text-align: center;
+      background-color: #fff;
+      transition: all 0.3s;
+
+      img {
+        margin: 0 auto 16px;
+      }
+
+      span {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        color: #000;
+
+        @include m($lg) {
+          font-size: 18px;
+          line-height: 22px;
+        }
+      }
+
+      p {
         font-weight: 500;
         font-size: 12px;
         line-height: 18px;
@@ -118,7 +116,12 @@
       }
 
       &:hover {
-        cursor: pointer;
+        background: #edf3ff;
+      }
+
+      @include m($md) {
+        padding: 24px 8px;
+        border-radius: 0;
       }
     }
 
@@ -150,19 +153,19 @@
     }
 
     &:first-of-type {
-      @include m($md) {
-        border-radius: 14px 14px 0 0;
+      a {
+        @include m($md) {
+          border-radius: 14px 14px 0 0;
+        }
       }
     }
 
     &:last-of-type {
-      @include m($md) {
-        border-radius: 0 0 14px 14px;
+      a {
+        @include m($md) {
+          border-radius: 0 0 14px 14px;
+        }
       }
-    }
-
-    &:hover {
-      background: #edf3ff;
     }
   }
 
