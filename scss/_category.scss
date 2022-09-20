@@ -30,6 +30,11 @@
         font-size: 18px;
         line-height: 26px;
         text-transform: capitalize;
+
+        @include m($lg) {
+          font-size: 16px;
+          line-height: 24px;
+        }
       }
 
       p {
@@ -38,6 +43,11 @@
         line-height: 20px;
         text-transform: capitalize;
         color: #303030;
+
+        @include m($lg) {
+          font-size: 12px;
+          line-height: 18px;
+        }
       }
 
       a {
@@ -53,10 +63,23 @@
           top: 24px;
           width: 24px;
           height: 24px;
+
+          @include m($lg) {
+            right: 16px;
+            top: 20px;
+          }
+
+          @include m($md) {
+            display: none;
+          }
         }
 
         &:hover {
           background-color: #edf3ff;
+        }
+
+        @include m($lg) {
+          padding: 20px 16px;
         }
       }
 
@@ -76,5 +99,9 @@
         }
       }
     }
+  }
+
+  @include m($lg) {
+    margin: -47px auto 72px;
   }
 }

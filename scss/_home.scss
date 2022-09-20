@@ -1,5 +1,5 @@
 .promoted {
-  padding: 72px;
+  padding: 72px 0;
 
   h4 {
     margin-bottom: 32px;
@@ -41,7 +41,25 @@
         &:hover {
           background-color: #edf3ff;
         }
+
+        @include m($lg) {
+          font-size: 15px;
+          line-height: 18px;
+        }
+
+        @include m($md) {
+          font-size: 14px;
+          line-height: 17px;
+        }
       }
+
+      @include m(580) {
+        max-width: 100%;
+      }
+    }
+
+    @include m(580) {
+      flex-direction: column;
     }
   }
 }
@@ -82,6 +100,15 @@
         background-color: #edf3ff;
         cursor: pointer;
       }
+
+      @include m($lg) {
+        padding: 8px 6px 16px;
+      }
+
+      @include m($md) {
+        padding: 24px 6px;
+        border-radius: 0;
+      }
     }
 
     img {
@@ -96,6 +123,11 @@
       line-height: 24px;
       text-align: center;
       color: #000;
+
+      @include m($lg) {
+        font-size: 18px;
+        line-height: 22px;
+      }
     }
 
     a {
@@ -117,7 +149,48 @@
         height: 143px;
         background-color: rgba(0, 0, 0, 0.05);
         transform: translateY(-50%);
+
+        @include m($lg) {
+          right: -12px;
+        }
+
+        @include m($md) {
+          display: none;
+        }
+      }
+
+      @include m($md) {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        border-radius: 0;
       }
     }
+
+    &:first-of-type {
+      label {
+        @include m($md) {
+          border-radius: 14px 14px 0 0;
+        }
+      }
+    }
+
+    &:last-of-type {
+      label {
+        @include m($md) {
+          border-radius: 0 0 14px 14px;
+        }
+      }
+    }
+  }
+
+  @include m($lg) {
+    grid-gap: 0 23px;
+    margin: -47px auto 0;
+    padding: 12px;
+  }
+
+  @include m($md) {
+    grid-template-columns: 1fr;
+    padding: 0;
+    overflow: hidden;
   }
 }
