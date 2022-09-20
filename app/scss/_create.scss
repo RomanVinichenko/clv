@@ -1,4 +1,4 @@
-.wallet {
+.create {
   margin: -37px auto 72px;
   padding: 40px 48px;
   border: 1px solid #f6f9fc;
@@ -12,6 +12,16 @@
     font-size: 30px;
     line-height: 40px;
     color: #171717;
+
+    @include m($lg) {
+      font-size: 26px;
+      line-height: 34px;
+    }
+
+    @include m($md) {
+      font-size: 24px;
+      line-height: 32px;
+    }
   }
 
   p {
@@ -20,6 +30,11 @@
     line-height: 24px;
     text-transform: capitalize;
     color: #303030;
+
+    @include m($lg) {
+      font-size: 14px;
+      line-height: 20px;
+    }
   }
 
   &__box {
@@ -27,12 +42,39 @@
     align-items: center;
     justify-content: center;
     margin: 16px 0;
-    min-height: 538px;
+    height: 538px;
     background-color: #2c2d30;
+
+    img {
+      @include m($lg) {
+        max-width: 168px;
+      }
+
+      @include m($md) {
+        max-width: 121px;
+      }
+    }
+
+    @include m($lg) {
+      height: 440px;
+    }
+
+    @include m($md) {
+      height: 349px;
+    }
   }
 
   a {
     display: inline;
     color: #00e1d4;
+  }
+
+  @include m($lg) {
+    margin: -47px auto 72px;
+    padding: 30px 36px;
+  }
+
+  @include m($md) {
+    padding: 20px 24px;
   }
 }
