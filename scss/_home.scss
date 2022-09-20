@@ -96,11 +96,6 @@
       border-radius: 14px;
       transition: all 0.3s;
 
-      &:hover {
-        background-color: #edf3ff;
-        cursor: pointer;
-      }
-
       @include m($lg) {
         padding: 8px 6px 16px;
       }
