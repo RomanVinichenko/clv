@@ -155,7 +155,7 @@ html {
   }
 }
 
-.search {
+.rv-search {
   padding: 40px 0 53px;
   background-image: linear-gradient(234.96deg, #a9ffe0 16.38%, #86d5ff 100%);
 
@@ -326,5 +326,56 @@ html {
 
   @include m($md) {
     height: 48px;
+  }
+}
+
+.box-slide {
+  margin: 40px 0 24px;
+  background-color: #000;
+}
+
+.swiper {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 5;
+    width: 92px;
+    height: 24px;
+    background-image: linear-gradient(270deg, #000 0%, rgba(0, 0, 0, 0) 100%);
+  }
+}
+
+.swiper-slide {
+  width: 24px !important;
+  height: 24px !important;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.12);
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: #343434;
+
+      img {
+        opacity: 1;
+      }
+    }
+  }
+
+  img {
+    opacity: 0.3;
+    width: auto;
+    height: auto;
+    transition: all 0.3s;
   }
 }

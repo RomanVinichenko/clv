@@ -21,3 +21,9 @@ if (burger) {
         menuItems.classList.toggle('menu__items--active')
     })
 }
+
+var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 40,
+    loop: true,
+    slidesPerView: "auto",
+});
