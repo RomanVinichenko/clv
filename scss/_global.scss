@@ -131,14 +131,15 @@ html {
   margin: -117px auto 72px !important;
 
   h3 {
+    margin-top: 32px;
     margin-bottom: 16px !important;
 
-    &:last-of-type {
-      margin-top: 32px;
+    &:first-of-type {
+      margin-top: 0;
+    }
 
-      @include m($lg) {
-        margin-top: 24px;
-      }
+    @include m($lg) {
+      margin-top: 24px;
     }
   }
 
@@ -293,12 +294,8 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 16px;
   width: 100%;
-  height: 78px;
-  border: 1px solid #f6f9fc;
-  border-radius: 14px;
-  box-shadow: 0 17px 14px -10px rgba(0, 0, 0, 0.05);
+  height: 38px;
   background-color: #fff;
 
   h2 {
@@ -332,51 +329,50 @@ html {
 .box-slide {
   margin: 40px 0 24px;
   background-color: #000;
-}
 
-#swiper-cat {
-  position: relative;
+  .swiper {
+    position: relative;
 
-
-  &::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 5;
-    width: 92px;
-    height: 24px;
-    background-image: linear-gradient(270deg, #000 0%, rgba(0, 0, 0, 0) 100%);
-  }
-
-  .swiper-slide {
-    width: 24px !important;
-    height: 24px !important;
-
-    a {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 24px;
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 5;
+      width: 92px;
       height: 24px;
-      border-radius: 50%;
-      background-color: rgba(255, 255, 255, 0.12);
-      transition: all 0.3s;
-
-      &:hover {
-        background-color: #343434;
-
-        img {
-          opacity: 1;
-        }
-      }
+      background-image: linear-gradient(270deg, #000 0%, rgba(0, 0, 0, 0) 100%);
     }
 
-    img {
-      opacity: 0.3;
-      width: auto;
-      height: auto;
-      transition: all 0.3s;
+    .swiper-slide {
+      width: 24px !important;
+      height: 24px !important;
+
+      a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.12);
+        transition: all 0.3s;
+
+        &:hover {
+          background-color: #343434;
+
+          img {
+            opacity: 1;
+          }
+        }
+      }
+
+      img {
+        opacity: 0.3;
+        width: auto;
+        height: auto;
+        transition: all 0.3s;
+      }
     }
   }
 }
