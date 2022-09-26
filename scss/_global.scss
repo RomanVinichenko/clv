@@ -344,6 +344,7 @@ html {
 
       @include m($md) {
         display: block;
+        width: 60px;
       }
     }
 
@@ -356,6 +357,10 @@ html {
       width: 92px;
       height: 27px;
       background-image: linear-gradient(270deg, #000 0%, rgba(0, 0, 0, 0) 100%);
+
+      @include m($md) {
+        width: 60px;
+      }
     }
 
     .swiper-button-prev-tag,
@@ -426,6 +431,7 @@ html {
 
     @include m($md) {
       display: block;
+      width: 60px;
     }
   }
 
@@ -438,6 +444,10 @@ html {
     width: 92px;
     height: 24px;
     background-image: linear-gradient(270deg, #000 0%, rgba(0, 0, 0, 0) 100%);
+
+    @include m($md) {
+      width: 60px;
+    }
   }
 
   .swiper-slide {
