@@ -372,17 +372,17 @@ html {
       margin: 0;
       padding: 0;
       width: 24px;
-      height: 24px;
+      height: 27px;
       outline: none;
       border: none;
       cursor: pointer;
 
       &::before {
         position: absolute;
-        top: 0;
+        top: 50%;
         width: 24px;
         height: 24px;
-        background-color: rgba(#000, 0.4);
+        transform: translateY(-50%);
       }
 
       &::after {
@@ -507,7 +507,6 @@ html {
       top: 0;
       width: 24px;
       height: 24px;
-      background-color: rgba(#000, 0.4);
     }
 
     &::after {
