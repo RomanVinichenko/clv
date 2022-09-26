@@ -326,6 +326,10 @@ html {
   }
 }
 
+#swiper-tag-box {
+  margin: 0;
+}
+
 .box-slide {
   margin: 40px 0 24px;
   background-color: #000;
@@ -392,8 +396,8 @@ html {
       }
     }
 
-    .swiper-button-prev,
-    .swiper-button-next {
+    .swiper-button-prev-cat,
+    .swiper-button-next-cat {
       position: absolute;
       top: 0;
       z-index: 10;
@@ -404,6 +408,7 @@ html {
       height: 24px;
       outline: none;
       border: none;
+      cursor: pointer;
 
       &::before {
         position: absolute;
@@ -422,7 +427,7 @@ html {
       }
     }
 
-    .swiper-button-next {
+    .swiper-button-next-cat {
       right: 0;
 
       &::before {
@@ -431,7 +436,7 @@ html {
       }
     }
 
-    .swiper-button-prev {
+    .swiper-button-prev-cat {
       left: 0;
 
       &::before {
