@@ -22,14 +22,14 @@ if (burger) {
     })
 }
 
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper("#swiper-cat", {
     spaceBetween: 40,
     loop: true,
     slidesPerView: "auto",
     allowTouchMove: false,
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".swiper-button-next-cat",
+        prevEl: ".swiper-button-prev-cat",
     },
     breakpoints: {
         750: {
