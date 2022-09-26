@@ -26,4 +26,14 @@ var swiper = new Swiper(".mySwiper", {
     spaceBetween: 40,
     loop: true,
     slidesPerView: "auto",
+    allowTouchMove: false,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        750: {
+            allowTouchMove: true,
+        }
+    }
 });

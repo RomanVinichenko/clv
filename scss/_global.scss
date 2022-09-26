@@ -327,11 +327,28 @@ html {
 }
 
 .box-slide {
-  margin: 40px 0 24px;
+  margin: 0;
   background-color: #000;
 
   .swiper {
     position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 5;
+      display: none;
+      width: 92px;
+      height: 24px;
+      background-image: linear-gradient(270deg, #000 0%, rgba(0, 0, 0, 0) 100%);
+      transform: rotate(-180deg);
+
+      @include m($md) {
+        display: block;
+      }
+    }
 
     &::after {
       content: "";
@@ -372,6 +389,54 @@ html {
         width: auto;
         height: auto;
         transition: all 0.3s;
+      }
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      position: absolute;
+      top: 0;
+      z-index: 10;
+      display: none;
+      margin: 0;
+      padding: 0;
+      width: 24px;
+      height: 24px;
+      outline: none;
+      border: none;
+
+      &::before {
+        position: absolute;
+        top: 0;
+        width: 24px;
+        height: 24px;
+        background-color: rgba(#000, 0.4);
+      }
+
+      &::after {
+        display: none;
+      }
+
+      @include m($md) {
+        display: block;
+      }
+    }
+
+    .swiper-button-next {
+      right: 0;
+
+      &::before {
+        content: url("../images/arrow-white.svg");
+        right: 0;
+      }
+    }
+
+    .swiper-button-prev {
+      left: 0;
+
+      &::before {
+        content: url("../images/arrow-white-left.svg");
+        left: 0;
       }
     }
   }
