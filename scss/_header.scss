@@ -153,6 +153,7 @@
         }
 
         @include m($md) {
+          display: none;
           justify-content: center;
           margin: 0 auto;
           padding: 0 22px 0 0;
@@ -230,12 +231,6 @@
             margin-bottom: 6px;
             padding-bottom: 6px;
           }
-
-          @include m($md) {
-            margin-bottom: 0;
-            padding-bottom: 0;
-            border-bottom: none;
-          }
         }
       }
 
@@ -248,24 +243,11 @@
 
         &:hover {
           opacity: 0.7;
-
-          @include m($md) {
-            opacity: 1;
-          }
         }
 
         @include m($lg) {
           font-size: 14px;
           line-height: 18px;
-        }
-
-        @include m($md) {
-          padding: 8px 0;
-          font-weight: 300;
-          font-size: 14px;
-          line-height: 20px;
-          text-align: center;
-          color: #fff;
         }
       }
 
@@ -275,13 +257,7 @@
       }
 
       @include m($md) {
-        position: absolute;
-        top: 46px;
-        padding: 8px 0;
-        width: 100%;
-        border: none;
-        border-radius: 8px;
-        background-color: rgba(255, 255, 255, 0.1);
+        display: none;
       }
     }
 

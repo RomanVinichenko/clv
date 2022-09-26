@@ -10,11 +10,7 @@ if (langButton) {
         menuLang.classList.toggle('menu__lang--rotate')
     })
 }
-if (window.innerWidth < 750) {
-    langButton.addEventListener('click', function () {
-        menuItems.classList.toggle('menu__items--lang')
-    })
-}
+
 if (burger) {
     burger.addEventListener('click', function () {
         burger.classList.toggle('menu__burger--active')

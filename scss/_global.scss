@@ -22,9 +22,18 @@ html {
   cursor: default;
 }
 
+a {
+  &:focus,
+  &:hover {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
 .container {
   margin: 0 auto;
   padding: 0 16px;
+  width: 100%;
   max-width: 918px;
 }
 
@@ -247,7 +256,7 @@ html {
     display: flex;
 
     li {
-      +li {
+      + li {
         position: relative;
         margin-left: 16px;
 
@@ -540,4 +549,79 @@ html {
 .box-slide {
   margin: 40px 0 24px;
   background-color: #000;
+}
+
+.panel-group {
+  display: none;
+  margin-bottom: 0 !important;
+  width: 100%;
+  color: #fff;
+  background-color: transparent;
+
+  .panel {
+    background-color: transparent;
+  }
+
+  .panel-title {
+    padding: 11px 0;
+
+    .accordion-toggle {
+      position: relative;
+      margin: 0 auto;
+      width: fit-content;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      color: #fff;
+      caret-color: transparent;
+
+      &::after {
+        content: url("../images/lang-arrow.svg");
+        position: absolute;
+        right: -26px;
+        top: 38%;
+        width: 24px;
+        height: 24px;
+        transform: scale(0.7) translateY(-50%) rotate(180deg);
+        transition: all 0.3s;
+      }
+    }
+
+    .collapsed {
+      &::after {
+        content: url("../images/lang-arrow.svg");
+        position: absolute;
+        right: -26px;
+        top: 38%;
+        width: 24px;
+        height: 24px;
+        transform: scale(0.7) translateY(-50%);
+        transition: all 0.3s;
+      }
+    }
+  }
+
+  .panel-body {
+    padding: 8px 0;
+  }
+
+  .panel-collapse {
+    border-radius: 8px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+
+    a {
+      padding: 8px 0;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 20px;
+      text-align: center;
+      color: #fff;
+    }
+  }
+
+  @include m($md) {
+    display: block;
+  }
 }
