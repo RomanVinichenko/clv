@@ -3,7 +3,14 @@ const menuDrop = document.querySelector('.menu__drop')
 const burger = document.querySelector('.menu__burger')
 const menuItems = document.querySelector('.menu__items')
 const menuLang = document.querySelector('.menu__lang')
+const secret = document.querySelector('.secret')
+const secretBut = document.querySelector('.close-brown')
 
+if (secretBut) {
+    secretBut.addEventListener('click', function () {
+        secret.style.display = 'none'
+    })
+}
 if (langButton) {
     langButton.addEventListener('click', function () {
         menuDrop.classList.toggle('menu__drop--active')

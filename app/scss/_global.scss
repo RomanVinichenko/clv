@@ -625,3 +625,38 @@ a {
     display: block;
   }
 }
+
+.secret {
+  display: flex;
+  padding: 16px 24px 16px 26px;
+  height: 56px;
+  background: linear-gradient(0deg, rgba(255, 158, 104, 0.15), rgba(255, 158, 104, 0.15)), #000;
+
+  p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #ffac7d;
+  }
+
+  .warn-brown {
+    margin-right: 8px;
+  }
+
+  .close-brown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 0 auto;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+  }
+}
+
+.secret--close {
+  display: none;
+}
