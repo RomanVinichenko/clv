@@ -29,20 +29,21 @@
 
   ul {
     margin-bottom: 16px;
+    padding-left: 20px;
 
     li {
       position: relative;
-      padding-left: 10px;
+      padding-left: 18px;
 
       &::after {
         content: "";
         position: absolute;
         left: 0;
         top: 50%;
-        width: 4px;
-        height: 4px;
+        width: 6px;
+        height: 6px;
         border-radius: 50%;
-        background-color: #00e1d4;
+        background-color: #000;
         transform: translateY(-50%);
       }
     }
@@ -50,7 +51,7 @@
 
   ol {
     margin-bottom: 16px;
-    padding-left: 20px;
+    padding-left: 36px;
   }
 
   img {
