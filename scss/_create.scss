@@ -45,12 +45,22 @@
         border-radius: 50%;
         background-color: #000;
       }
+
+      &:not(:last-child) {
+        margin-bottom: 6px;
+      }
     }
   }
 
   ol {
     margin-bottom: 16px;
     padding-left: 36px;
+
+    li {
+      &:not(:last-child) {
+        margin-bottom: 6px;
+      }
+    }
   }
 
   img {
