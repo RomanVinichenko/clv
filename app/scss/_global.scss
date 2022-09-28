@@ -433,14 +433,18 @@ a {
     top: 0;
     z-index: 5;
     display: none;
-    width: 92px;
+    width: 82px;
     height: 24px;
     background-image: linear-gradient(270deg, #000 0%, rgba(0, 0, 0, 0) 100%);
     transform: rotate(-180deg);
 
     @include m($md) {
       display: block;
-      width: 60px;
+      width: 50px;
+    }
+
+    @include m($sm) {
+      width: 40px;
     }
   }
 
@@ -450,12 +454,16 @@ a {
     right: 0;
     top: 0;
     z-index: 5;
-    width: 92px;
+    width: 82px;
     height: 24px;
     background-image: linear-gradient(270deg, #000 0%, rgba(0, 0, 0, 0) 100%);
 
     @include m($md) {
-      width: 60px;
+      width: 50px;
+    }
+
+    @include m($sm) {
+      width: 40px;
     }
   }
 
@@ -497,53 +505,53 @@ a {
     }
   }
 
-  .swiper-button-prev-cat,
-  .swiper-button-next-cat {
-    position: absolute;
-    top: 0;
-    z-index: 10;
-    display: none;
-    margin: 0;
-    padding: 0;
-    width: 24px;
-    height: 24px;
-    outline: none;
-    border: none;
-    cursor: pointer;
+  //.swiper-button-prev-cat,
+  //.swiper-button-next-cat {
+  //  position: absolute;
+  //  top: 0;
+  //  z-index: 10;
+  //  display: none;
+  //  margin: 0;
+  //  padding: 0;
+  //  width: 24px;
+  //  height: 24px;
+  //  outline: none;
+  //  border: none;
+  //  cursor: pointer;
+  //
+  //  &::before {
+  //    position: absolute;
+  //    top: 0;
+  //    width: 24px;
+  //    height: 24px;
+  //  }
+  //
+  //  &::after {
+  //    display: none;
+  //  }
+  //
+  //  @include m($md) {
+  //    display: block;
+  //  }
+  //}
 
-    &::before {
-      position: absolute;
-      top: 0;
-      width: 24px;
-      height: 24px;
-    }
-
-    &::after {
-      display: none;
-    }
-
-    @include m($md) {
-      display: block;
-    }
-  }
-
-  .swiper-button-next-cat {
-    right: 0;
-
-    &::before {
-      content: url("../images/arrow-white.svg");
-      right: 0;
-    }
-  }
-
-  .swiper-button-prev-cat {
-    left: 0;
-
-    &::before {
-      content: url("../images/arrow-white-left.svg");
-      left: 0;
-    }
-  }
+  //.swiper-button-next-cat {
+  //  right: 0;
+  //
+  //  &::before {
+  //    content: url("../images/arrow-white.svg");
+  //    right: 0;
+  //  }
+  //}
+  //
+  //.swiper-button-prev-cat {
+  //  left: 0;
+  //
+  //  &::before {
+  //    content: url("../images/arrow-white-left.svg");
+  //    left: 0;
+  //  }
+  //}
 }
 
 .box-slide {
