@@ -681,3 +681,10 @@ a {
 .secret--close {
   display: none;
 }
+
+.menu-tag-btn:hover {
+  @include m($md) {
+    color: rgba(255, 255, 255, 0.5);
+    background-color: transparent;
+  }
+}
