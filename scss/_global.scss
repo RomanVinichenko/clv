@@ -629,10 +629,10 @@ a {
 .secret {
   display: flex;
   padding: 16px 24px 16px 26px;
-  height: 56px;
   background: linear-gradient(0deg, rgba(255, 158, 104, 0.15), rgba(255, 158, 104, 0.15)), #000;
 
   p {
+    margin-right: 10px;
     font-weight: 500;
     font-size: 14px;
     line-height: 24px;
@@ -651,9 +651,22 @@ a {
     padding: 0;
     width: 24px;
     height: 24px;
+    min-width: 24px;
+    max-width: 24px;
     outline: none;
     border: none;
     background-color: transparent;
+
+    img {
+      width: 24px;
+      height: 24px;
+      min-width: 24px;
+      max-width: 24px;
+    }
+  }
+
+  @include m($xl) {
+    padding: 16px;
   }
 }
 
