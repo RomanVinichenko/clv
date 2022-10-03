@@ -27,6 +27,5 @@ if (burger) {
 
 var swiper = new Swiper("#swiper-cat", {
     spaceBetween: 40,
-    loop: true,
     slidesPerView: "auto",
 });
