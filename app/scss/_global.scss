@@ -435,7 +435,6 @@ a {
     display: none;
     width: 82px;
     height: 24px;
-    background-image: linear-gradient(270deg, #000 0%, rgba(0, 0, 0, 0) 100%);
     transform: rotate(-180deg);
 
     @include m($md) {
@@ -451,7 +450,7 @@ a {
   &::after {
     content: "";
     position: absolute;
-    right: -10%;
+    right: 0;
     top: 0;
     z-index: 5;
     width: 10%;
@@ -651,9 +650,7 @@ a {
   }
 }
 
-.swiper {
-  margin-right: auto;
-  margin-left: 0;
-  width: 90%;
-  overflow: inherit;
+#swiper-cat,
+#swiper-tag {
+  padding-right: 100px;
 }
