@@ -572,13 +572,19 @@ a {
     background-color: #fff !important;
   }
 
-  #swiper-cat,
+  #swiper-cat {
+    padding-right: 60px !important;
+  }
+
   #swiper-tag {
     padding-right: 60px !important;
   }
 }
 
-#swiper-cat,
+#swiper-cat {
+  padding-right: 90px !important;
+}
+
 #swiper-tag {
   padding-right: 90px !important;
 }
