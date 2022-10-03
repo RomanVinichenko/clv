@@ -556,6 +556,18 @@ a {
   display: none;
 }
 
+#swiper-cat {
+  padding-right: 90px;
+}
+
+#swiper-tag {
+  padding-right: 150px;
+
+  .swiper-wrapper {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
 @media screen and (max-width: 750px) {
   .menu-tag-btn:hover {
     color: rgba(255, 255, 255, 0.5) !important;
@@ -577,18 +589,6 @@ a {
   }
 
   #swiper-tag {
-    padding-right: 100px;
-  }
-}
-
-#swiper-cat {
-  padding-right: 90px;
-}
-
-#swiper-tag {
-  padding-right: 150px;
-
-  .swiper-wrapper {
-    transform: translate3d(0, 0, 0);
+    padding-right: 100px !important;
   }
 }
