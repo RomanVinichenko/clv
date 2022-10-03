@@ -451,10 +451,10 @@ a {
   &::after {
     content: "";
     position: absolute;
-    right: 0;
+    right: -10%;
     top: 0;
     z-index: 5;
-    width: 82px;
+    width: 10%;
     height: 24px;
     background-image: linear-gradient(270deg, #000 0%, rgba(0, 0, 0, 0) 100%);
 
@@ -504,54 +504,6 @@ a {
       transition: all 0.3s;
     }
   }
-
-  //.swiper-button-prev-cat,
-  //.swiper-button-next-cat {
-  //  position: absolute;
-  //  top: 0;
-  //  z-index: 10;
-  //  display: none;
-  //  margin: 0;
-  //  padding: 0;
-  //  width: 24px;
-  //  height: 24px;
-  //  outline: none;
-  //  border: none;
-  //  cursor: pointer;
-  //
-  //  &::before {
-  //    position: absolute;
-  //    top: 0;
-  //    width: 24px;
-  //    height: 24px;
-  //  }
-  //
-  //  &::after {
-  //    display: none;
-  //  }
-  //
-  //  @include m($md) {
-  //    display: block;
-  //  }
-  //}
-
-  //.swiper-button-next-cat {
-  //  right: 0;
-  //
-  //  &::before {
-  //    content: url("../images/arrow-white.svg");
-  //    right: 0;
-  //  }
-  //}
-  //
-  //.swiper-button-prev-cat {
-  //  left: 0;
-  //
-  //  &::before {
-  //    content: url("../images/arrow-white-left.svg");
-  //    left: 0;
-  //  }
-  //}
 }
 
 .box-slide {
@@ -682,9 +634,26 @@ a {
   display: none;
 }
 
-.menu-tag-btn:hover {
-  @include m($md) {
+@media screen and (max-width: 750px) {
+  .menu-tag-btn:hover {
     color: rgba(255, 255, 255, 0.5) !important;
-    background-color: transparent !important;
+    background-color: #1e201b !important;
   }
+
+  .menu-tag-btn-active {
+    color: #000 !important;
+    background-color: #fff !important;
+  }
+
+  .menu-tag-btn-active:hover {
+    color: #000 !important;
+    background-color: #fff !important;
+  }
+}
+
+.swiper {
+  margin-right: auto;
+  margin-left: 0;
+  width: 90%;
+  overflow: inherit;
 }
