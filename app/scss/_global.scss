@@ -397,8 +397,8 @@ a {
   .swiper-slide {
     z-index: 20;
     display: block;
-    width: 24px !important;
-    height: 24px !important;
+    width: 24px;
+    height: 24px;
 
     a {
       display: inline-flex;
@@ -556,16 +556,12 @@ a {
   display: none;
 }
 
-#swiper-cat {
-  padding-right: 90px;
+.shadow-slide-cat {
+  width: 55px !important;
 }
 
-#swiper-tag {
-  padding-right: 150px;
-
-  .swiper-wrapper {
-    transform: translate3d(0, 0, 0);
-  }
+.shadow-slide-tag {
+  width: 55px !important;
 }
 
 @media screen and (max-width: 750px) {
@@ -582,9 +578,5 @@ a {
   .menu-tag-btn-active:hover {
     color: #000 !important;
     background-color: #fff !important;
-  }
-
-  #swiper-cat {
-    padding-right: 60px;
   }
 }
