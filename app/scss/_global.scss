@@ -357,7 +357,13 @@ a {
       }
     }
 
+    .swiper-slide {
+      z-index: 20;
+      display: block;
+    }
+
     .swiper-wrapper {
+      position: relative;
       left: 0;
       margin-left: auto;
     }
@@ -383,6 +389,7 @@ a {
   }
 
   .swiper-wrapper {
+    position: relative;
     left: 0;
     margin-left: auto;
   }
@@ -566,12 +573,12 @@ a {
   }
 
   #swiper-cat,
-  #swiper-tag-box {
+  #swiper-tag {
     padding-right: 60px !important;
   }
 }
 
 #swiper-cat,
-#swiper-tag-box {
+#swiper-tag {
   padding-right: 90px !important;
 }
