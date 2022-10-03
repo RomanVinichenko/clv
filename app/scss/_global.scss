@@ -573,18 +573,22 @@ a {
   }
 
   #swiper-cat {
-    padding-right: 60px !important;
+    padding-right: 60px;
   }
 
   #swiper-tag {
-    padding-right: 60px !important;
+    padding-right: 100px;
   }
 }
 
 #swiper-cat {
-  padding-right: 90px !important;
+  padding-right: 90px;
 }
 
 #swiper-tag {
-  padding-right: 90px !important;
+  padding-right: 150px;
+
+  .swiper-wrapper {
+    transform: translate3d(0, 0, 0);
+  }
 }
