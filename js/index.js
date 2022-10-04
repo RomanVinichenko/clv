@@ -29,7 +29,7 @@ var swiper = new Swiper("#swiper-cat", {
     spaceBetween: 40,
     slidesPerView: "auto",
 });
-// var swiperT = new Swiper("#swiper-tag", {
-//     spaceBetween: 16,
-//     slidesPerView: "auto",
-// });
+var swiperT = new Swiper("#swiper-tag", {
+    spaceBetween: 16,
+    slidesPerView: "auto",
+});
